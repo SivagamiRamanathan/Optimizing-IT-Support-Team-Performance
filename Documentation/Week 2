@@ -1,1 +1,32 @@
+Introduction:
 
+In Week 2, we focused on learning the basic working of Microsoft Power BI. The goal was to understand how Power BI can import data, 
+transform datasets, and create visualizations for analysis.
+
+Data Import:
+
+We practiced importing datasets from different sources such as Excel files and CSV files into Power BI. 
+Power BI provides two options while importing data:
+Load – Directly loads the data into Power BI.
+Transform Data – Opens Power Query Editor to perform data cleaning and transformation.
+Data Transformation Using Power Query
+
+Using Power Query Editor, we practiced several data preparation steps such as:
+- Checking column data types
+- Renaming columns
+- Removing unnecessary columns
+- Filtering unwanted data
+- Formatting date and numeric fields
+
+Data Visualization:
+We learned how to create different visualizations in Power BI including:
+- Bar charts
+- Pie charts
+- Line charts
+- Tables
+- KPI cards
+These visualizations help represent ticket data clearly and allow users to understand trends and patterns easily.
+
+Outcome:
+By the end of Week 2, we gained practical knowledge of Power BI basics including importing data, cleaning datasets, 
+and creating visualizations.
