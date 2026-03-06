@@ -44,4 +44,40 @@ Track ticket resolution efficiency
 Monitor SLA compliance                
 Analyze workload distribution            
 Evaluate customer satisfaction trends                    
-This dataset forms the foundation for building KPIs and dashboards in Power BI.              
+This dataset forms the foundation for building KPIs and dashboards in Power BI.   
+
+**Section 4 – Key Performance Indicators (KPIs)**
+
+Key Performance Indicators (KPIs) are measurable metrics used to evaluate the performance and efficiency of the IT support team.
+
+The following KPIs were developed in this project:
+
+Total Tickets – The total number of support tickets created within a specific time period.
+
+Resolved Tickets – The total number of tickets successfully resolved by the support team.
+
+Pending Tickets – The number of tickets that are still open or in progress.
+
+Average Resolution Time – The average time required to resolve support tickets.
+
+First Response Time – The average time taken by the support team to respond to a ticket after it is created.
+
+SLA Compliance Rate – The percentage of tickets resolved within the defined SLA time limit.
+
+Tickets by Priority – Shows how many tickets fall under each priority level.
+
+Tickets per Engineer – Displays how many tickets are handled by each support engineer.
+
+Customer Satisfaction Score (CSAT) – The average feedback rating given by users after issue resolution.
+
+These KPIs help monitor team productivity and improve service performance.
+
+**Section 5 – Tools Used**
+
+The following tools and technologies were used in this project:
+
+Microsoft Power BI – Used for data visualization and dashboard development.
+
+Power Query Editor – Used for data cleaning and transformation.
+
+GitHub – Used for project documentation and version control.
