@@ -1,1 +1,25 @@
+In Week 3, we worked as a team to clean and prepare the technical support dataset. Data cleaning is a crucial step 
+because raw datasets may contain missing values, duplicate entries, or inconsistent formats.
 
+Data Cleaning Process:
+
+During the team work session, the following data cleaning steps were performed:
+- Removing duplicate records
+- Handling missing or null values
+- Standardizing date and time formats
+- Correcting inconsistent category names
+- Verifying column data types
+
+Data Transformation:
+
+After cleaning the dataset, additional transformations were performed using Power Query. 
+Calculated columns such as Resolution Time were created to measure how long it takes to resolve support tickets.
+
+Team Collaboration:
+
+The cleaning process was completed as a team effort where members worked together to review the dataset, 
+identify issues, and apply appropriate data cleaning techniques.
+
+Outcome:
+After completing the cleaning process, the dataset was properly structured and ready for analysis in Power BI. 
+The processed data will be used to create KPIs and dashboards to evaluate IT support team performance.
