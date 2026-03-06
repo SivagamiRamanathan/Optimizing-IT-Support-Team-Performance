@@ -1,9 +1,20 @@
-Week 1 – Introduction
+Week 1 – Problem Analysis and Dataset Understanding
+Introduction:
 
-In Week 1, we focused on understanding the project problem and planning how to perform the analysis. The main objective was to study the problem statement and identify what type of data is required to analyze IT support team performance.
+In Week 1, the focus was on understanding the project problem and planning the overall approach for analysis. The objective of the project is to optimize IT support team performance using analytics.
 
-We learned how to collect datasets from different online sources. Some useful websites for datasets include Kaggle, GitHub repositories, and open data platforms. These websites provide datasets that can be used for analysis and learning purposes.
+Dataset Collection:
 
-During this stage, we also learned how to understand a dataset by examining the column names, data types, and the meaning of each field. This helps in identifying which data is useful for the project.
+Datasets were explored from online platforms such as Kaggle, GitHub repositories, and open data portals. These websites provide datasets in structured formats like Excel or CSV which are suitable for analysis.
+Understanding the Dataset
+The dataset structure was examined by reviewing column names, data types, and the meaning of each field. Typical fields include Ticket ID, Issue Category, Priority Level, Assigned Engineer, Ticket Status, Response Time, Resolution Time, and Customer Satisfaction Score.
 
-We also discussed how the collected dataset should be stored in formats such as Excel or CSV so that it can be easily imported into analytical tools like Power BI. This planning helped us prepare for the next stages of the project, including data cleaning and dashboard development.
+Planning Data Preparation:
+
+Before analysis, the dataset needs to be cleaned. Planned steps included removing duplicate records, handling missing values, standardizing date formats, correcting category names, and creating calculated columns such as resolution time.
+
+Tools Selection:
+The tools selected for the project were Microsoft Power BI for analysis and visualization, Power Query for data cleaning, Microsoft Excel for storing datasets, and GitHub for documentation.
+
+Outcome:
+By the end of Week 1, the problem was clearly understood, dataset sources were identified, and the project workflow was planned.
