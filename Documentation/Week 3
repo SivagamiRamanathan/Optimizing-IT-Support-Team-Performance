@@ -1,5 +1,6 @@
-In Week 3, we worked as a team to clean and prepare the technical support dataset. Data cleaning is a crucial step 
-because raw datasets may contain missing values, duplicate entries, or inconsistent formats.
+In Week 3, our team worked on cleaning and preparing a sample messy IT support dataset. 
+Raw datasets often contain errors, missing values, duplicates, and inconsistent formats, which makes analysis difficult.
+Therefore, data cleaning is an important step before performing data analysis.
 
 Data Cleaning Process:
 
@@ -10,14 +11,9 @@ During the team work session, the following data cleaning steps were performed:
 - Correcting inconsistent category names
 - Verifying column data types
 
-Data Transformation:
-
-After cleaning the dataset, additional transformations were performed using Power Query.
-
 Team Collaboration:
-
-The cleaning process was completed as a team effort where members worked together to review the dataset, 
-identify issues, and apply appropriate data cleaning techniques.
+The data cleaning activity was carried out as a team effort. Each team member analyzed different parts of the dataset and shared their observations. Team collaboration helped identify more data issues and provided deeper insights into the dataset.
+Working together allowed us to clean the dataset more efficiently and understand the data patterns better.
 
 Outcome:
 After completing the cleaning process, the dataset was properly structured and ready for analysis in Power BI. 
