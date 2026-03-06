@@ -1,1 +1,9 @@
+Week 1 – Introduction
 
+In Week 1, we focused on understanding the project problem and planning how to perform the analysis. The main objective was to study the problem statement and identify what type of data is required to analyze IT support team performance.
+
+We learned how to collect datasets from different online sources. Some useful websites for datasets include Kaggle, GitHub repositories, and open data platforms. These websites provide datasets that can be used for analysis and learning purposes.
+
+During this stage, we also learned how to understand a dataset by examining the column names, data types, and the meaning of each field. This helps in identifying which data is useful for the project.
+
+We also discussed how the collected dataset should be stored in formats such as Excel or CSV so that it can be easily imported into analytical tools like Power BI. This planning helped us prepare for the next stages of the project, including data cleaning and dashboard development.
