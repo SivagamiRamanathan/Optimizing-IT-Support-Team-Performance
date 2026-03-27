@@ -1,246 +1,147 @@
-# README – IT SUPPORT TEAM PERFORMANCE ANALYSIS USING POWER BI
+# 📊 Optimizing IT Support Team Performance
 
 ---
 
-# 📌 Project Title
+## 🔷 Section 1: Title
 
-**Optimizing IT Support Team Performance using Data Visualization (Power BI)**
-
----
-
-# 📖 Project Overview
-
-This project focuses on analyzing IT support ticket data to evaluate the performance of a technical support team and identify areas for improvement. The dataset consists of various attributes such as ticket ID, priority level, support agent, country, issue type, and resolution time.
-
-The primary aim of this project is to convert raw and unstructured data into meaningful insights using Power BI. The entire workflow includes data cleaning, transformation, exploratory data analysis (EDA), data modelling, DAX calculations, and dashboard creation.
-
-By implementing a structured analytical approach, the project enables better decision-making and performance optimization for IT support operations.
+**Optimizing IT Support Team Performance using Power BI**
 
 ---
 
-# 🎯 Objectives
+## 🔷 Section 2: Problem Statement
 
-* To understand and analyze IT support ticket data
-* To identify performance gaps in the support team
-* To measure key performance indicators (KPIs)
-* To build interactive dashboards for decision-making
-* To apply Power BI concepts such as DAX, data modelling, and visualization
+In modern organizations, IT support teams play a crucial role in maintaining system efficiency and resolving user issues. However, as the number of support tickets increases, it becomes challenging to manage them effectively without proper analysis and monitoring tools.
 
----
+Lack of visibility into ticket distribution, agent performance, and resolution trends can lead to delayed responses, inefficient workload distribution, and reduced service quality. Organizations often struggle to identify high-priority issues, recurring problems, and performance gaps among support agents.
 
-# 🔄 Project Workflow (Detailed Week-wise Execution)
+This project aims to address these challenges by analyzing IT support ticket data and creating interactive dashboards using Power BI. The objective is to optimize team performance by providing insights into ticket patterns, agent efficiency, and time-based trends, enabling better decision-making and improved service delivery.
 
 ---
 
-## 🔹 Week 1 – Problem Analysis and Dataset Understanding
+## 🔷 Section 3: Dataset Description
 
-In the initial stage, the problem statement was clearly defined. The objective was to optimize IT support team performance by analyzing ticket data.
+The dataset used in this project contains detailed information about IT support tickets, which helps in analyzing various aspects of support operations.
 
-The dataset was explored in detail to understand its structure and contents. Important columns such as Ticket ID, Created Time, Closed Time, Priority, Agent Name, Country, and Ticket Type were identified.
+| Column Name         | Description                                        |
+| ------------------- | -------------------------------------------------- |
+| Ticket ID           | Unique identifier for each support ticket          |
+| Priority            | Indicates urgency level (High, Medium, Low)        |
+| Agent Name          | Name of the support agent handling the ticket      |
+| Country             | Location from which the ticket was raised          |
+| Ticket Type (Topic) | Category of the issue (Bug, Feature Request, etc.) |
+| Created Date        | Date when the ticket was created                   |
+| Resolution Time     | Time taken to resolve the ticket                   |
+| Status              | Indicates whether the ticket is Open or Closed     |
 
-Data types were verified, and initial observations were made regarding missing values, duplicate entries, and inconsistent formatting. This stage helped in understanding the nature of the dataset and defining the scope of analysis.
-
----
-
-## 🔹 Week 2 – Power BI Practical Working
-
-In this stage, the Power BI environment was explored. The interface components such as Ribbon, Canvas, and Visualization Pane were studied.
-
-Different views in Power BI were analyzed:
-
-* Report View for creating dashboards
-* Data View for inspecting data
-* Model View for managing relationships
-
-Power Query Editor was introduced as a tool for data transformation. Basic operations such as loading data, filtering rows, and modifying columns were performed.
+The dataset was cleaned and prepared using Power Query Editor to ensure accuracy and consistency before visualization.
 
 ---
 
-## 🔹 Week 3 – Data Cleaning (Team-Based Approach)
+## 🔷 Section 4: KPI (Key Performance Indicators)
 
-Data cleaning was performed using Power Query Editor to prepare the dataset for analysis. This process was carried out collaboratively, where each team member contributed suggestions.
+Key metrics were created using DAX to evaluate system performance:
 
-The following steps were implemented:
+* **Total Tickets**: Represents the total number of tickets raised
+* **Average Resolution Time**: Measures the average time taken to resolve tickets
+* **Closed Tickets**: Indicates the number of successfully resolved tickets
+* **SLA %**: Percentage of tickets resolved within the expected time
 
-* Removal of duplicate records using Ticket ID
-* Deletion of irrelevant columns to reduce complexity
-* Handling missing values by either removing or replacing them
-* Standardizing inconsistent values (e.g., "high" → "High")
-* Converting data types (text to date/time)
-* Creating new columns such as Resolution Time and Ticket Age
-
-This stage ensured that the dataset became clean, consistent, and analysis-ready.
+These KPIs provide a quick summary of overall system efficiency.
 
 ---
 
-## 🔹 Week 4 – KPI Cards and Performance Metrics
+## 🔷 Section 5: Dashboard Description
 
-Key Performance Indicators (KPIs) were identified to measure support team performance. KPI cards were created in Power BI to display important metrics such as:
-
-* Total number of tickets
-* Average resolution time
-* SLA compliance percentage
-* Number of closed tickets
-* Customer satisfaction score
-
-Additionally, five important business questions were framed to guide dashboard development:
-
-1. Distribution of tickets by priority level
-2. Average resolution time
-3. Top-performing support agents
-4. Countries generating the most tickets
-5. Most frequently raised ticket types
-
-These metrics and questions formed the foundation for visualization.
+To achieve a complete analysis, three dashboards were developed:
 
 ---
 
-## 🔹 Week 5 – Exploratory Data Analysis (EDA)
+### 🔹 Dashboard 1: Ticket Distribution Insights
 
-EDA was performed to understand patterns and trends in the dataset. Power BI features such as Column Distribution, Column Profile, and Column Quality were used in Power Query Editor.
+This dashboard provides an overview of ticket distribution across different categories.
 
-Key activities included:
+**Visuals Used:**
 
-* Analyzing value distribution across columns
-* Identifying missing and error values
-* Detecting outliers in numerical fields
-* Understanding data ranges and patterns
+* KPI Cards
+* Bar Chart (Tickets by Issue Type)
+* Donut Chart (Tickets by Priority)
+* Bar Chart / Map (Tickets by Country)
 
-Visualizations such as bar charts, line charts, and histograms were used to explore the data.
+**Purpose:**
 
-Outliers were carefully analyzed and handled to ensure accurate results. This stage improved the understanding of the dataset and supported better decision-making in later stages.
-
----
-
-## 🔹 Week 6 – Data Modelling and Live Data Import
-
-Data modelling was implemented using the Star Schema approach. The original dataset was treated as the Fact Table, and separate Dimension Tables were created using synthetic data.
-
-Key concepts applied:
-
-* Fact Table containing measurable values
-* Dimension Tables containing descriptive attributes
-* Primary Key and Foreign Key relationships
-* Cardinality types (1:1, 1:*, *:1, *:*)
-* One-to-Many relationships for efficient filtering
-
-Synthetic data was used to create structured dimension tables such as Agent, Country, and Ticket Type.
-
-Live data import was explored using APIs. However, certain restrictions were observed:
-
-* URLs without authentication cannot be accessed
-* API rate limits restrict frequent data requests
-* Dynamic web content cannot be loaded
-* Data privacy settings may block connections
-
-This stage ensured a strong data structure and improved dashboard performance.
+* Understand distribution of tickets
+* Identify most frequent issue types
+* Analyze ticket volume across regions
 
 ---
 
-## 🔹 Week 7 – DAX, Measures, Visuals and Dashboard Creation
+### 🔹 Dashboard 2: Agent Performance Analysis
 
-In this stage, DAX was used to create measures for advanced calculations. Both implicit and explicit measures were implemented.
+This dashboard evaluates the performance of support agents.
 
-* Implicit measures were automatically generated by Power BI
-* Explicit measures were created using DAX formulas
+**Visuals Used:**
 
-Base measures (simple calculations) and composite measures (combination of measures) were developed to calculate KPIs.
+* KPI Card (Average Resolution Time)
+* Bar Chart (Tickets handled by agent)
+* Column Chart (Resolution time by agent)
 
-Visualizations were created using:
+**Purpose:**
 
-* Bar charts for comparison
-* Pie charts for distribution
-* Line charts for trends
-* Cards for KPI display
-
-Slicers were added to enable interactive filtering based on parameters such as priority, agent, and country.
-
-Three dashboards were created:
-
-### 1. IT Support Ticket Overview Dashboard
-
-Provides summary metrics and overall ticket distribution
-
-### 2. Support Team Performance Dashboard
-
-Analyzes agent performance and SLA compliance
-
-### 3. Ticket Analysis and Insights Dashboard
-
-Explores trends, country-wise distribution, and issue types
-
-Each dashboard followed a structured layout with KPI cards at the top, charts in the middle, and detailed analysis at the bottom.
+* Measure agent productivity
+* Identify top performers
+* Detect workload imbalance
 
 ---
 
-# 📊 Dashboard Design Approach
+### 🔹 Dashboard 3: Ticket Trends Over Time
 
-The dashboards were designed with a focus on clarity, usability, and interactivity.
+This dashboard focuses on analyzing trends over time.
 
-* KPI cards placed at the top for quick insights
-* Charts arranged logically for better understanding
-* Slicers added for dynamic filtering
-* Consistent color themes applied
-* Proper alignment and spacing maintained
+**Visuals Used:**
 
-This structured design improves user experience and supports effective decision-making.
+* Line Chart (Tickets over time)
+* Line Chart (Resolution time trend)
+* Stacked Area Chart (Priority trend)
 
----
+**Purpose:**
 
-# 🛠️ Tools and Technologies Used
-
-* Power BI Desktop
-* Power Query Editor
-* DAX (Data Analysis Expressions)
-* Excel / CSV dataset
+* Identify patterns and peak periods
+* Analyze changes in performance over time
 
 ---
 
-# 🔍 Key Concepts Implemented
+## 🔷 Section 6: Key Insights
 
-* Data Cleaning and Transformation
-* Exploratory Data Analysis (EDA)
-* Data Modelling (Star Schema)
-* Cardinality Relationships
-* DAX Measures
-* Dashboard Design and Visualization
-* Live Data Integration
+* Medium priority tickets form the majority of requests
+* Certain issue types occur more frequently, indicating recurring problems
+* Some countries generate higher ticket volumes
+* Workload is unevenly distributed among agents
+* Ticket volume varies over time with noticeable peak periods
 
 ---
 
-# ⚠️ Challenges Faced
+## 🔷 Section 7: Recommendations
 
-* Handling missing and inconsistent data
-* Identifying correct relationships
-* Managing large datasets efficiently
-* Handling API and URL restrictions
-* Designing clear and user-friendly dashboards
-
----
-
-# ✅ Outcomes
-
-* Clean and structured dataset
-* Efficient data model with relationships
-* Interactive dashboards with slicers
-* Accurate performance metrics
-* Meaningful insights for decision-making
+* Distribute workload evenly among support agents
+* Focus on resolving recurring issue types permanently
+* Monitor high-priority tickets closely
+* Use trend analysis for better resource planning
+* Improve response time through better training and processes
 
 ---
 
-# 📌 Conclusion
+## 🔷 Section 8: Tools Used
 
-This project demonstrates the effective use of Power BI for analyzing IT support data and improving team performance. By following a structured approach from data understanding to dashboard creation, the project successfully converts raw data into actionable insights.
-
-It highlights the importance of data preparation, modelling, and visualization in real-world data analysis scenarios.
+* **Power BI** – Dashboard creation and visualization
+* **Power Query Editor** – Data cleaning and transformation
+* **DAX** – Creating measures and KPIs
+* **Excel / CSV Dataset** – Data source
+* **GitHub**
 
 ---
 
-# 🚀 Future Scope
+## ✅ Conclusion
 
-* Integration with real-time databases
-* Advanced DAX and time intelligence functions
-* Predictive analytics using machine learning
-* Deployment using Power BI Service for sharing dashboards
+This project demonstrates how Power BI can be used to optimize IT support team performance by transforming raw ticket data into meaningful insights. The dashboards provide a clear understanding of ticket distribution, agent efficiency, and time-based trends, helping organizations improve decision-making and service quality.
 
 ---
